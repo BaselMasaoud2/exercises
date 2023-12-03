@@ -1,0 +1,72 @@
+body {
+    background-color: #ecf0f1;
+    font-family: 'Balthazar', serif;
+    margin: 0; 
+}
+
+#container {
+    display: grid;
+    grid-gap: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+        "header ."
+        "input button"
+        "posts posts";
+}
+
+#title {
+    grid-area: header;
+    color: #3498db;
+}
+
+#postInput {
+    grid-area: input;
+    padding: 10px;
+    font-size: 1.5vw;
+}
+
+#twitButton {
+    grid-area: button;
+    padding: 10px;
+    font-size: 1.5vw;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#postsContainer {
+    grid-area: posts;
+
+}
+
+.post-container {
+    box-shadow: 1px 1px 3px;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: white;
+}
+
+.comment-container {
+    margin-left: 10px;
+    margin: 10px;
+}
+
+.delete-comment {
+    cursor: pointer;
+    color: #e74c3c;
+}
+
+.delete {
+    cursor: pointer;
+    color: #238199;
+    background-color: red;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 0.8em;
+    float: right; 
+
+}

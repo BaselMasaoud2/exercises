@@ -1,0 +1,61 @@
+#container {
+    height: 100vh;
+    display: flex;
+}
+
+.friends {
+    padding: 15px;
+    background-color: blueviolet;
+    height: 100%;
+}
+
+.names {
+    padding: 5px;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat {
+    padding: 15px;
+    background-color: lightgray;
+    height: 100%;
+    overflow-y: auto;
+}
+
+#chat-box {
+    max-height: calc(100vh - 30px);
+}
+
+.text-container {
+    margin-bottom: 10px;
+    max-width: 70%;
+}
+
+.text-container.p-right {
+    margin-left: auto;
+    text-align: right;
+}
+
+.input {
+    display: flex;
+    padding: 20px;
+    margin-top: 700px;
+    background-color: #ecf0f1;
+  }
+  
+  input {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+  }
+  
+  button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+
+
